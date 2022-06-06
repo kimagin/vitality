@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
-  msg: String
-})
+  msg: String,
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <h2 class="text-emerald-600">UNOCSS initiated</h2>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
