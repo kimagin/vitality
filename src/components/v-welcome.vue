@@ -1,5 +1,5 @@
 <template>
-  <h1>Welcome</h1>
+  <h1>This text is comming streight from the Welcome module</h1>
 </template>
 
 <script>
