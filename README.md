@@ -1,4 +1,4 @@
-# {{ Vitality }}
+# {{ Vitality }} (wip)
 
 Opinionated Vue 3 and Vite starter template.
 
