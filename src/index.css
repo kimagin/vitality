@@ -4,3 +4,32 @@
 html {
   font-family: "Inter", sans-serif;
 }
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgb(36, 175, 112); */
+  -webkit-border-radius: 6px;
+  border-radius: 12px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 12px;
+  background: rgba(1, 187, 131, 0.759);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 182, 137, 0);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(0, 160, 115);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 187, 131);
+}
