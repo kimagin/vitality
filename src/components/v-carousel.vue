@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-full min-w-[100rem]">
+  <section class="relative w-full h-full min-w-[100rem] scale-125">
     <div
       class="absolute flex flex-col items-center justify-start font-mono  top-1/2 left-1/2 -translate-1/2 rounded-xl backdrop-blur-lg drop-shadow-2xl bg-gradient-to-br from-emerald-300/20 to-teal-600/30 text-light-300"
     >

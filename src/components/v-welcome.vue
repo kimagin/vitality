@@ -1,14 +1,5 @@
 <template>
-  <main
-    class="
-      flex flex-col
-      items-center
-      justify-between
-      h-full
-      max-w-[1400px]
-      m-auto
-    "
-  >
+  <main class="flex flex-col items-center justify-between h-full">
     <v-header></v-header>
     <v-carousel></v-carousel>
     <v-footer></v-footer>

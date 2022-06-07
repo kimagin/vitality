@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center mb-12 pt-[10%]">
+  <section class="flex flex-col items-center pt-[10%]">
     <img
       width="80"
       class="hue-rotate-170"
