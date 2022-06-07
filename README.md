@@ -44,7 +44,7 @@ instantly kickstart your next idea
 Clone the repository via _Terminal_ :
 
 ```bash
-git clone https://github.com/kimagin/TailwindCSS-boilerplate .
+git clone https://github.com/kimagin/vitality .
 ```
 
  After cloning the repository in your folder, install the dependencies via npm :
