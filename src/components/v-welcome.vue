@@ -1,9 +1,27 @@
 <template>
-  <h1>This text is comming streight from the Welcome module</h1>
+  <main
+    class="
+      flex flex-col
+      items-center
+      justify-between
+      h-full
+      max-w-[1400px]
+      m-auto
+    "
+  >
+    <v-header></v-header>
+    <v-carousel></v-carousel>
+    <v-footer></v-footer>
+  </main>
 </template>
 
 <script>
-export default {};
+import vHeader from "./v-header.vue";
+import vCarousel from "./v-carousel.vue";
+import vFooter from "./v-footer.vue";
+export default {
+  components: { vHeader, vCarousel, vFooter },
+};
 </script>
 
 <style>
