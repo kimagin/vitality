@@ -1,4 +1,6 @@
-# {{ vitality }}
+![alt](./public/readme_img.jpg)
+
+# Vitality
 
 Opinionated Vue 3 and Vite starter template.
 
@@ -7,7 +9,7 @@ Opinionated Vue 3 and Vite starter template.
 Clone the repository via _Terminal_ :
 
 ```bash
-git clone https://github.com/kimagin/vitality 
+git clone https://github.com/kimagin/TailwindCSS-boilerplate .
 ```
 
  After cloning the repository in your folder, install the dependencies via npm :
