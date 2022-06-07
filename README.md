@@ -7,7 +7,7 @@ Opinionated Vue 3 and Vite starter template.
 1. Clone the repository via *Terminal* :
 
 ```bash
-git clone https://github.com/kimagin/TailwindCSS-boilerplate .
+git clone https://github.com/kimagin/vitality 
 ```
 
 2. After cloning the repository in your folder, install the dependencies via npm :
