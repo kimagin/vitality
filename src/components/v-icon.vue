@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center mt-8">
+  <div class="flex items-center justify-center mt-4">
     <div class="flex items-end justify-around space-x-3 w-7/8">
       <a v-for="icon in icons" :href="icon.link" target="_blank" :key="icon.id">
         <img
