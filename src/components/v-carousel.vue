@@ -45,10 +45,11 @@
               {{ slide.title }}
             </div>
             <div>
-              <span class="text-orange-500">{{ slide.server + " " }}</span>
-              <span>{{ slide.action + " " }}</span>
+              <span class="text-orange-400">{{ slide.server + " " }}</span>
+              <span>{{ slide.action || "" + " " }}</span>
               <a :href="slide.value" target="_blank">
-                <span class="text-emerald-400"> {{ slide.value }}</span>
+                <span class="text-emerald-400"> {{ slide.value + " " }}</span>
+                <span class="text-cyan-500">{{ slide.desctiption }}</span>
               </a>
             </div>
           </div>
@@ -60,8 +61,9 @@
         >
           <span
             v-for="slide in slides"
-            class="w-2 h-2 rounded-full cursor-pointer bg-dark-100"
-            :class="slide.isActive === true ? 'bg-emerald-700' : ''"
+            :key="slide.id"
+            class="w-2 h-2 bg-teal-400 rounded-full cursor-pointer"
+            :class="slide.isActive === false ? 'opacity-40' : ''"
             @click="page(slide)"
           ></span>
         </div>
@@ -80,21 +82,32 @@ export default {
           title: "#github",
           server: "git",
           value: "https://github.com/kimagin/vitality",
+          desctiption: "",
           action: "clone ",
           isActive: true,
         },
         {
           id: "sld2",
-          title: "#development",
+          title: "#installation",
           server: "npm",
-          value: "run dev",
+          value: "install",
+          desctiption: "// installing all the dependencies",
           isActive: false,
         },
         {
           id: "sld3",
-          title: "#publish",
+          title: "#development",
+          server: "npm",
+          value: "run dev",
+          desctiption: "// localhost:3000",
+          isActive: false,
+        },
+        {
+          id: "sld4",
+          title: "#publishing",
           server: "npm",
           value: "run build",
+          desctiption: "// ready to deploy",
           isActive: false,
         },
       ],
