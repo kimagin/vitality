@@ -1,16 +1,15 @@
 ![alt](./public/readme_img.jpg)
 
-<br>
-<h2 align="center">
+<h1 align="center">
 Vitality
-</h2>
+</h1>
 <p align="center">
     Opinionated Vue 3 and Vite starter template.
 </p>
+<p align="center">
+instantly kickstart your next idea
+</p>
 
-<br>
-
-<h1 align="center"></h1>
 
 ## Features
 
