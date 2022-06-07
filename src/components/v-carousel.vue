@@ -54,6 +54,18 @@
           </div>
         </span>
       </div>
+      <div class="">
+        <div
+          class="relative left-0 flex items-center justify-center w-full h-full space-x-2  top-4 pagination"
+        >
+          <span
+            v-for="slide in slides"
+            class="w-2 h-2 rounded-full cursor-pointer bg-dark-100"
+            :class="slide.isActive === true ? 'bg-emerald-700' : ''"
+            @click="page(slide)"
+          ></span>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -78,8 +90,23 @@ export default {
           value: "run dev",
           isActive: false,
         },
+        {
+          id: "sld3",
+          title: "#publish",
+          server: "npm",
+          value: "run build",
+          isActive: false,
+        },
       ],
     };
+  },
+  methods: {
+    page(item) {
+      this.slides.forEach((element) => {
+        element.isActive = false;
+      });
+      item.isActive = true;
+    },
   },
 };
 </script>
