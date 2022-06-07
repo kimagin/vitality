@@ -14,7 +14,7 @@
       </div>
       <div class="flex flex-col items-center justify-around h-full px-8 py-5">
         <span
-          v-for="(slide, index) in slides"
+          v-for="slide in slides"
           :key="slide.id"
           v-show="slide.isActive === true"
         >
