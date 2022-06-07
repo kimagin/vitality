@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col items-center pt-[10%]">
+  <section class="flex flex-col items-center pt-[10vh] sm:pt-[15vh]">
     <img
       width="80"
       class="hue-rotate-170"
@@ -7,7 +7,7 @@
       alt=""
     />
     <span class="tracking-[.5em] text-center ml-[.5em]">
-      <h1 class="text-6xl text-gray-300 font-extralight">
+      <h1 class="text-4xl text-gray-300 sm:text-6xl font-extralight">
         {{ vitality }}
       </h1>
     </span>
@@ -16,7 +16,7 @@
       <em class="font-italic text-emerald-500"> Vue JS 3.0 </em> starting
       template
     </h2>
-    <div class="mb-4 text-sm text-center ma-1 opacity-70">
+    <div class="w-2/3 mb-4 text-sm text-center sm:w-auto ma-1 opacity-70">
       <a href="">vite 2 / </a>
       <a href="">Vue 3 / </a>
       <a href="">unocss / </a>

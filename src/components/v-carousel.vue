@@ -1,7 +1,27 @@
 <template>
-  <section class="relative w-full h-full min-w-[100rem] scale-125 -z-20">
+  <section class="relative w-full h-full min-w-[100rem] sm:scale-125 -z-20">
     <div
-      class="absolute flex flex-col items-center justify-start font-mono  top-1/2 left-1/2 -translate-1/2 rounded-xl backdrop-blur-md drop-shadow-2xl bg-gradient-to-br from-emerald-300/20 to-teal-600/30 text-light-300"
+      class="
+        absolute
+        flex flex-col
+        items-center
+        justify-start
+        font-mono
+        top-1/2
+        left-1/2
+        -translate-1/2
+        sm:rounded-xl
+        backdrop-blur-md
+        drop-shadow-2xl
+        bg-gradient-to-br
+        sm:w-auto
+        w-[100vw]
+        from-emerald-300/20
+        to-teal-600/30
+        text-light-300
+        h-50
+        sm:h-auto
+      "
     >
       <div
         class="top-0 left-0 flex w-full py-3 pl-1 border border-transparent  border-b-emerald-400/10"
@@ -12,7 +32,9 @@
           :key="circle"
         ></span>
       </div>
-      <div class="flex flex-col items-center justify-around h-full px-8 py-5">
+      <div
+        class="flex flex-col items-center justify-around h-full px-8 py-5 text-sm  sm:text-sm"
+      >
         <span
           v-for="slide in slides"
           :key="slide.id"
