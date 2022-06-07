@@ -1,7 +1,7 @@
 <template>
   <section class="relative w-full h-max sm:scale-100 -z-20 min-h-35">
-    <div class="w-full h-full mx-auto">
-      <transition-group name="slide-fade">
+    <div class="h-full mx-auto">
+      <transition-group name="slide-fade" class="blurme">
         <span
           v-for="slide in slides"
           :key="slide.id"
@@ -9,14 +9,14 @@
           class="absolute left-0 right-0"
         >
           <div
-            class="flex flex-col items-center justify-start mx-auto font-mono  w-max sm:rounded-xl backdrop-blur-md drop-shadow-2xl bg-gradient-to-br from-emerald-300/20 to-teal-600/30 text-light-300"
+            class="flex flex-col items-center justify-start mx-auto font-mono  w-max sm:rounded-xl drop-shadow-2xl bg-gradient-to-br from-emerald-300/20 to-teal-600/30 text-light-300 blurme"
           >
             <div
-              class="top-0 left-0 flex w-full py-3 pl-1 border border-transparent  border-b-emerald-400/10"
+              class="top-0 left-0 flex w-full py-3 pl-1 border border-transparent  border-b-emerald-400/10 blurme"
             >
               <span
                 v-for="circle in 3"
-                class="block w-3 h-3 ml-2 rounded-full bg-emerald-800"
+                class="block w-3 h-3 ml-2 rounded-full bg-emerald-800 blurme"
                 :key="circle"
               ></span>
             </div>
@@ -128,5 +128,9 @@ export default {
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   opacity: 0;
+}
+.blurme {
+  -webkikt-filter: url("#myblurfilter");
+  filter: url("#myblurfilter");
 }
 </style>

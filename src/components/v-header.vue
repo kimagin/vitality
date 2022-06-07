@@ -29,16 +29,20 @@
       <a href="">inter font </a>
     </div>
     <v-icon> </v-icon>
+    <v-button class="mt-12" @click="count++">Count: {{ count }}</v-button>
   </section>
 </template>
 
 <script>
 import vIcon from "./v-icon.vue";
+import vButton from "./v-button.vue";
 export default {
-  components: { vIcon },
+  components: { vIcon, vButton },
   data() {
     return {
       vitality: "{{ vitality }}",
+
+      count: 0,
     };
   },
 };
